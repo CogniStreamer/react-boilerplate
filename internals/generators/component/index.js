@@ -39,13 +39,13 @@ module.exports = {
     // Generate index.js and index.test.js
     const actions = [{
       type: 'add',
-      path: '../../app/components/{{properCase name}}/index.js',
-      templateFile: data.type === 'ES6 Class' ? './component/es6.js.hbs' : './component/stateless.js.hbs',
+      path: '../../app/components/{{properCase name}}/index.jsx',
+      templateFile: data.type === 'ES6 Class' ? './component/es6.jsx.hbs' : './component/stateless.jsx.hbs',
       abortOnFail: true
     }, {
       type: 'add',
-      path: '../../app/components/{{properCase name}}/tests/index.test.js',
-      templateFile: './component/test.js.hbs',
+      path: '../../app/components/{{properCase name}}/tests/index.test.jsx',
+      templateFile: './component/test.jsx.hbs',
       abortOnFail: true
     }];
 

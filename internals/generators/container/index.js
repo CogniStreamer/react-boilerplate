@@ -48,13 +48,13 @@ module.exports = {
     // Generate index.js and index.test.js
     const actions = [{
       type: 'add',
-      path: '../../app/containers/{{properCase name}}/index.js',
-      templateFile: './container/index.js.hbs',
+      path: '../../app/containers/{{properCase name}}/index.jsx',
+      templateFile: './container/index.jsx.hbs',
       abortOnFail: true
     }, {
       type: 'add',
-      path: '../../app/containers/{{properCase name}}/tests/index.test.js',
-      templateFile: './container/test.js.hbs',
+      path: '../../app/containers/{{properCase name}}/tests/index.test.jsx',
+      templateFile: './container/test.jsx.hbs',
       abortOnFail: true
     }];
 
