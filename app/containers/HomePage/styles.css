@@ -25,11 +25,11 @@ label {
 }
 
 .input {
-  outline: none;
   border-bottom: 1px dotted #999;
+  outline: none;
 }
 
 .atPrefix {
-  color: black;
+  color: #000;
   margin-left: 0.4em;
 }

@@ -15,18 +15,18 @@ body.fontLoaded {
 }
 
 :global(#app) {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   min-height: 100%;
   min-width: 100%;
 }
 
 .wrapper {
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: calc(768px + 16px * 2);
   min-height: 100%;
   padding: 0 16px;
-  flex-direction: column;
 }
 
 .logoWrapper {
@@ -34,7 +34,7 @@ body.fontLoaded {
 }
 
 .logo {
-  width: 100%;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }

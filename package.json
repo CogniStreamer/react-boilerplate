@@ -126,7 +126,11 @@
       "jsx-a11y/mouse-events-have-key-events": 2,
       "jsx-a11y/role-has-required-aria-props": 2,
       "jsx-a11y/role-supports-aria-props": 2,
-      "max-len": [2, 120, 2],
+      "max-len": [
+        2,
+        120,
+        2
+      ],
       "newline-per-chained-call": 0,
       "no-console": 1,
       "no-use-before-define": 0,
@@ -141,7 +145,10 @@
       "import/resolver": {
         "webpack": {
           "config": "./internals/webpack/webpack.test.babel.js",
-          "extensions": [".js", ".jsx"]
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
         }
       }
     }
@@ -149,9 +156,13 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "color-hex-case": "upper",
+      "color-hex-case": "lower",
+      "color-named": "never",
       "string-quotes": "single",
       "font-family-name-quotes": "always-where-recommended",
+      "function-url-quotes": "always",
+      "declaration-block-properties-order": "alphabetical",
+      "max-line-length": 80,
       "selector-pseudo-class-no-unknown": [
         true,
         {

@@ -1,31 +1,29 @@
 .buttonWrapper {
-  width: 100%;
-  text-align: center;
   margin: 4em 0;
+  text-align: center;
+  width: 100%;
 }
 
 .button {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0.25em 2em;
-  margin: 0;
-  border: 0;
-  text-decoration: none;
+  border: 2px solid #41addd;
   border-radius: 4px;
+  box-sizing: border-box;
+  color: #41addd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  outline: 0;
+  padding: 0.25em 2em;
+  text-decoration: none;
   -webkit-touch-callout: none;
   user-select: none;
-  cursor: pointer;
-  outline: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #FFF;
-  border: 2px solid #41ADDD;
-  color: #41ADDD;
 }
 
 .button:active {
-  background: #41ADDD;
-  color: #FFF;
+  background: #41addd;
+  color: #fff;
 }
