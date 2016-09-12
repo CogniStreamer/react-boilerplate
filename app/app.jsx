@@ -1,5 +1,5 @@
 /**
- * app.js
+ * app.jsx
  *
  * This is the entry file for the application, only setup and boilerplate
  * code.
@@ -26,7 +26,7 @@ import useScroll from 'react-router-scroll';
 import configureStore from './store';
 
 // Import Language Provider
-import LanguageProvider from 'containers/LanguageProvider';
+import LanguageProvider from 'containers/LanguageProvider/index.jsx';
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -64,7 +64,7 @@ if (window.devToolsExtension) {
 // must be provided for resolving how to retrieve the "route" in the state
 import { selectLocationState } from 'containers/App/selectors';
 const history = syncHistoryWithStore(browserHistory, store, {
-  selectLocationState: selectLocationState(),
+  selectLocationState: selectLocationState()
 });
 
 // Set up the router, wrapping all Routes in the App component
@@ -72,7 +72,7 @@ import App from 'containers/App';
 import createRoutes from './routes';
 const rootRoute = {
   component: App,
-  childRoutes: createRoutes(store),
+  childRoutes: createRoutes(store)
 };
 
 const render = (translatedMessages) => {
@@ -110,7 +110,7 @@ if (!window.Intl) {
   }))
     .then(() => Promise.all([
       System.import('intl/locale-data/jsonp/en.js'),
-      System.import('intl/locale-data/jsonp/de.js'),
+      System.import('intl/locale-data/jsonp/de.js')
     ]))
     .then(() => render(translationMessages))
     .catch((err) => {

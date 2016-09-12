@@ -8,13 +8,13 @@ const OfflinePlugin = require('offline-plugin');
 module.exports = require('./webpack.base.babel')({
   // In production, we skip all hot-reloading stuff
   entry: [
-    path.join(process.cwd(), 'app/app.js'),
+    path.join(process.cwd(), 'app/app.jsx')
   ],
 
   // Utilize long-term caching by adding content hashes (not compilation hashes) to compiled assets
   output: {
     filename: '[name].[chunkhash].js',
-    chunkFilename: '[name].[chunkhash].chunk.js',
+    chunkFilename: '[name].[chunkhash].chunk.js'
   },
 
   // We use ExtractTextPlugin so we get a seperate CSS file instead
@@ -29,7 +29,7 @@ module.exports = require('./webpack.base.babel')({
       name: 'vendor',
       children: true,
       minChunks: 2,
-      async: true,
+      async: true
     }),
 
     // OccurrenceOrderPlugin is needed for long-term caching to work properly.
@@ -42,8 +42,8 @@ module.exports = require('./webpack.base.babel')({
     // Minify and optimize the JavaScript
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false, // ...but do not show warnings in the console (there is a lot of them)
-      },
+        warnings: false // ...but do not show warnings in the console (there is a lot of them)
+      }
     }),
 
     // Minify and optimize the index.html
@@ -59,9 +59,9 @@ module.exports = require('./webpack.base.babel')({
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true,
+        minifyURLs: true
       },
-      inject: true,
+      inject: true
     }),
 
     // Extract the CSS into a seperate file
@@ -83,13 +83,13 @@ module.exports = require('./webpack.base.babel')({
         // All chunks marked as `additional`, loaded after main section
         // and do not prevent SW to install. Change to `optional` if
         // do not want them to be preloaded at all (cached only when first loaded)
-        additional: ['*.chunk.js'],
+        additional: ['*.chunk.js']
       },
 
       // Removes warning for about `additional` section usage
       safeToUseOptionalCaches: true,
 
-      AppCache: false,
-    }),
-  ],
+      AppCache: false
+    })
+  ]
 });

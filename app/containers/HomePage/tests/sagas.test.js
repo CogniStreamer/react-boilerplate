@@ -35,10 +35,10 @@ describe('getRepos Saga', () => {
   it('should dispatch the reposLoaded action if it requests the data successfully', () => {
     const response = {
       data: [{
-        name: 'First repo',
+        name: 'First repo'
       }, {
-        name: 'Second repo',
-      }],
+        name: 'Second repo'
+      }]
     };
     const putDescriptor = getReposGenerator.next(response).value;
     expect(putDescriptor).toEqual(put(reposLoaded(response.data, username)));
@@ -46,7 +46,7 @@ describe('getRepos Saga', () => {
 
   it('should call the repoLoadingError action if the response errors', () => {
     const response = {
-      err: 'Some error',
+      err: 'Some error'
     };
     const putDescriptor = getReposGenerator.next(response).value;
     expect(putDescriptor).toEqual(put(repoLoadingError(response.err)));

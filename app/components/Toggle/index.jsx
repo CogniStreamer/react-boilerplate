@@ -30,7 +30,7 @@ function Toggle(props) {  // eslint-disable-line react/prefer-stateless-function
 Toggle.propTypes = {
   onToggle: React.PropTypes.func,
   values: React.PropTypes.array,
-  messages: React.PropTypes.object,
+  messages: React.PropTypes.object
 };
 
 export default Toggle;

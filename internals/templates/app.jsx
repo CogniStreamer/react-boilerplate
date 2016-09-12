@@ -1,5 +1,5 @@
 /**
- * app.js
+ * app.jsx
  *
  * This is the entry file for the application, only setup and boilerplate
  * code.
@@ -40,7 +40,7 @@ const store = configureStore(initialState, browserHistory);
 // must be provided for resolving how to retrieve the "route" in the state
 import { selectLocationState } from 'containers/App/selectors';
 const history = syncHistoryWithStore(browserHistory, store, {
-  selectLocationState: selectLocationState(),
+  selectLocationState: selectLocationState()
 });
 
 // Set up the router, wrapping all Routes in the App component
@@ -48,7 +48,7 @@ import App from 'containers/App';
 import createRoutes from './routes';
 const rootRoute = {
   component: App,
-  childRoutes: createRoutes(store),
+  childRoutes: createRoutes(store)
 };
 
 
@@ -85,7 +85,7 @@ if (module.hot) {
 if (!window.Intl) {
   Promise.all([
     System.import('intl'),
-    System.import('intl/locale-data/jsonp/en.js'),
+    System.import('intl/locale-data/jsonp/en.js')
   ]).then(() => render(translationMessages));
 } else {
   render(translationMessages);

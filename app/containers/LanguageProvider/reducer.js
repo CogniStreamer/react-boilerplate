@@ -6,11 +6,11 @@
 
 import { fromJS } from 'immutable';
 import {
-  CHANGE_LOCALE,
+  CHANGE_LOCALE
 } from './constants';
 
 const initialState = fromJS({
-  locale: 'en',
+  locale: 'en'
 });
 
 function languageProviderReducer(state = initialState, action) {

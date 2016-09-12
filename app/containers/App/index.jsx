@@ -26,7 +26,7 @@ function App(props) {
         titleTemplate="%s - React.js Boilerplate"
         defaultTitle="React.js Boilerplate"
         meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' },
+          { name: 'description', content: 'A React.js Boilerplate application' }
         ]}
       />
       <A className={styles.logoWrapper} href="https://twitter.com/mxstbr">
@@ -39,7 +39,7 @@ function App(props) {
 }
 
 App.propTypes = {
-  children: React.PropTypes.node,
+  children: React.PropTypes.node
 };
 
 export default App;

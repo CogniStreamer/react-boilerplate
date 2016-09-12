@@ -9,7 +9,7 @@ import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';
 
 export const appLocales = [
-  'en',
+  'en'
 ];
 
 import enTranslationMessages from './translations/en.json';
@@ -26,5 +26,5 @@ const formatTranslationMessages = (messages) => {
 };
 
 export const translationMessages = {
-  en: formatTranslationMessages(enTranslationMessages),
+  en: formatTranslationMessages(enTranslationMessages)
 };

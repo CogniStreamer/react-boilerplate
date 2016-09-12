@@ -43,7 +43,7 @@ return (
 ## Integrating Global CSS
 
 Because class names in CSS Modules are locally scoped by default, there is some
-additional setup and consideration that must be taken to work correctly with 
+additional setup and consideration that must be taken to work correctly with
 traditional global CSS.
 
 Let's use [Bootstrap](http://getbootstrap.com/) as an example.  First of all,
@@ -96,7 +96,7 @@ const ReactBoilerplate = {
 };
 ```
 
-And finally edit `app/app.js`, and add the following after the line `import 'sanitize.css/sanitize.css';`
+And finally edit `app/app.jsx`, and add the following after the line `import 'sanitize.css/sanitize.css';`
 ```javascript
 import 'bootstrap-css-only/css/bootstrap.min.css';
 ```

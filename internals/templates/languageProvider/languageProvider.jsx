@@ -25,12 +25,19 @@ export class LanguageProvider extends React.Component { // eslint-disable-line r
 LanguageProvider.propTypes = {
   locale: React.PropTypes.string,
   messages: React.PropTypes.object,
-  children: React.PropTypes.element.isRequired,
+  children: React.PropTypes.element.isRequired
 };
+
 
 const mapStateToProps = createSelector(
   selectLocale(),
   (locale) => ({ locale })
 );
 
-export default connect(mapStateToProps)(LanguageProvider);
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LanguageProvider);

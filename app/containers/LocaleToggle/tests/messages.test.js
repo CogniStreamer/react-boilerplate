@@ -6,12 +6,12 @@ describe('getLocaleMessages', () => {
     const expected = {
       en: {
         id: 'app.components.LocaleToggle.en',
-        defaultMessage: 'en',
+        defaultMessage: 'en'
       },
       fr: {
         id: 'app.components.LocaleToggle.fr',
-        defaultMessage: 'fr',
-      },
+        defaultMessage: 'fr'
+      }
     };
 
     const actual = getLocaleMessages(['en', 'fr']);

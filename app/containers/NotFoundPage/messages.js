@@ -8,10 +8,10 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'boilerplate.containers.NotFoundPage.header',
-    defaultMessage: 'Page not found.',
+    defaultMessage: 'Page not found.'
   },
   homeButton: {
     id: 'boilerplate.containers.NotFoundPage.home',
-    defaultMessage: 'Home',
-  },
+    defaultMessage: 'Home'
+  }
 });

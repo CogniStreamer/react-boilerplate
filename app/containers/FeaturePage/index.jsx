@@ -38,7 +38,7 @@ export class FeaturePage extends React.Component {
         <Helmet
           title="Feature Page"
           meta={[
-            { name: 'description', content: 'Feature page of React.js Boilerplate application' },
+            { name: 'description', content: 'Feature page of React.js Boilerplate application' }
           ]}
         />
         <H1>
@@ -98,12 +98,12 @@ export class FeaturePage extends React.Component {
   }
 }
 FeaturePage.propTypes = {
-  changeRoute: React.PropTypes.func,
+  changeRoute: React.PropTypes.func
 };
 
 function mapDispatchToProps(dispatch) {
   return {
-    changeRoute: (url) => dispatch(push(url)),
+    changeRoute: (url) => dispatch(push(url))
   };
 }
 

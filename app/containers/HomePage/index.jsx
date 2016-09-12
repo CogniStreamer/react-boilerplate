@@ -15,11 +15,11 @@ import { createStructuredSelector } from 'reselect';
 import {
   selectRepos,
   selectLoading,
-  selectError,
+  selectError
 } from 'containers/App/selectors';
 
 import {
-  selectUsername,
+  selectUsername
 } from './selectors';
 
 import { changeUsername } from './actions';
@@ -84,7 +84,7 @@ export class HomePage extends React.Component {
         <Helmet
           title="Home Page"
           meta={[
-            { name: 'description', content: 'A React.js Boilerplate application homepage' },
+            { name: 'description', content: 'A React.js Boilerplate application homepage' }
           ]}
         />
         <div>
@@ -132,15 +132,15 @@ HomePage.propTypes = {
   loading: React.PropTypes.bool,
   error: React.PropTypes.oneOfType([
     React.PropTypes.object,
-    React.PropTypes.bool,
+    React.PropTypes.bool
   ]),
   repos: React.PropTypes.oneOfType([
     React.PropTypes.array,
-    React.PropTypes.bool,
+    React.PropTypes.bool
   ]),
   onSubmitForm: React.PropTypes.func,
   username: React.PropTypes.string,
-  onChangeUsername: React.PropTypes.func,
+  onChangeUsername: React.PropTypes.func
 };
 
 function mapDispatchToProps(dispatch) {
@@ -152,7 +152,7 @@ function mapDispatchToProps(dispatch) {
       dispatch(loadRepos());
     },
 
-    dispatch,
+    dispatch
   };
 }
 
@@ -160,7 +160,7 @@ const mapStateToProps = createStructuredSelector({
   repos: selectRepos(),
   username: selectUsername(),
   loading: selectLoading(),
-  error: selectError(),
+  error: selectError()
 });
 
 // Wrap the component to inject dispatch and state into it

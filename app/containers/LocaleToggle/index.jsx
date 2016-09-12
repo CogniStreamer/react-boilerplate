@@ -25,7 +25,7 @@ export class LocaleToggle extends React.Component { // eslint-disable-line
 }
 
 LocaleToggle.propTypes = {
-  onLocaleToggle: React.PropTypes.func,
+  onLocaleToggle: React.PropTypes.func
 };
 
 const mapStateToProps = createSelector(
@@ -36,7 +36,7 @@ const mapStateToProps = createSelector(
 function mapDispatchToProps(dispatch) {
   return {
     onLocaleToggle: (evt) => dispatch(changeLocale(evt.target.value)),
-    dispatch,
+    dispatch
   };
 }
 

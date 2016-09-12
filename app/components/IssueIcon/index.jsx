@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import React from 'react';
 
 function IssueIcon(props) {
@@ -13,7 +15,7 @@ function IssueIcon(props) {
 }
 
 IssueIcon.propTypes = {
-  className: React.PropTypes.string,
+  className: React.PropTypes.string
 };
 
 export default IssueIcon;

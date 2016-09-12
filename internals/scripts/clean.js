@@ -28,10 +28,10 @@ rm('-rf', 'app/containers/*');
 mkdir('-p', 'app/containers/App');
 mkdir('-p', 'app/containers/NotFoundPage');
 mkdir('-p', 'app/containers/HomePage');
-cp('internals/templates/appContainer.js', 'app/containers/App/index.js');
-cp('internals/templates/notFoundPage/notFoundPage.js', 'app/containers/NotFoundPage/index.js');
+cp('internals/templates/appContainer.jsx', 'app/containers/App/index.jsx');
+cp('internals/templates/notFoundPage/notFoundPage.jsx', 'app/containers/NotFoundPage/index.jsx');
 cp('internals/templates/notFoundPage/messages.js', 'app/containers/NotFoundPage/messages.js');
-cp('internals/templates/homePage/homePage.js', 'app/containers/HomePage/index.js');
+cp('internals/templates/homePage/homePage.jsx', 'app/containers/HomePage/index.jsx');
 cp('internals/templates/homePage/messages.js', 'app/containers/HomePage/messages.js');
 
 // Handle Translations
@@ -75,7 +75,7 @@ cp('internals/templates/asyncInjectors.test.js',
   'app/utils/tests/asyncInjectors.test.js');
 
 // Replace the files in the root app/ folder
-cp('internals/templates/app.js', 'app/app.js');
+cp('internals/templates/app.jsx', 'app/app.jsx');
 cp('internals/templates/index.html', 'app/index.html');
 cp('internals/templates/reducers.js', 'app/reducers.js');
 cp('internals/templates/routes.js', 'app/routes.js');

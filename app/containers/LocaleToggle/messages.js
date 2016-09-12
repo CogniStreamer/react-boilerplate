@@ -11,8 +11,8 @@ export function getLocaleMessages(locales) {
     Object.assign(messages, {
       [locale]: {
         id: `app.components.LocaleToggle.${locale}`,
-        defaultMessage: `${locale}`,
-      },
+        defaultMessage: `${locale}`
+      }
     }), {});
 }
 

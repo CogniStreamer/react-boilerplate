@@ -57,7 +57,7 @@ export class RepoListItem extends React.Component { // eslint-disable-line react
 
 RepoListItem.propTypes = {
   item: React.PropTypes.object,
-  currentUser: React.PropTypes.string,
+  currentUser: React.PropTypes.string
 };
 
 export default connect(createSelector(
